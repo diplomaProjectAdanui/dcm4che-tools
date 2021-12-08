@@ -1,17 +1,31 @@
 # dcm4che-tools
 
-## Build
-
-Build Dockerfile with
+## Run
 
 ```sh
-docker build -t dcm4che-tools:latest .
+$ docker run -it --rm ghcr.io/diplomaprojectadanui/dcm4che-tools:latest
 ```
 
-## Start
+## Build local
 
+1. Clone the repo
 ```sh
-docker run -it --rm dcm4che-tools:latest
+$ git clone https://github.com/diplomaProjectAdanui/dcm4che-tools.git
+$ cd dcm4che-tools
+```
+2. Build the image
+```sh
+$ docker build -t dcm4che-tools:latest .
+```
+3. Start the image
+```sh
+$ docker run -it --rm dcm4che-tools:latest
+```
+
+## Extend Dockerfile
+
+```Dockerfile
+FROM ghcr.io/diplomaprojectadanui/dcm4che-tools:latest
 ```
 
 ## Extra
