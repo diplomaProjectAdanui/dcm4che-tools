@@ -1,5 +1,9 @@
 # dcm4che-tools
 
+Supported architecture: `linux/amd64`, `linux/arm64`, `linux/arm/v7`, `linux/riscv64`
+
+Base image: `ubuntu:22.04`
+
 ## Run
 
 ```sh
